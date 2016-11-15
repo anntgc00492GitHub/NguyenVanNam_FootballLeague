@@ -16,7 +16,8 @@ namespace NguyenVanNam_FootballLeague.Web
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+                namespaces: new string[] { "NguyenVanNam_FootballLeague.Web.Controllers" }
             );
         }
     }
